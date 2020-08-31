@@ -1,15 +1,20 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <h1>{{env}}</h1>
+    <h1>{{aaa}}</h1>
   </div>
 </template>
 <script>
-import login from '../network/http'
+import login from '@/network/http'
 export default {
   name: 'About',
   components: {},
   data () {
-    return {}
+    return {
+      env: process.env.VUE_APP_BASEURL,
+      aaa: process.env.VUE_APP_CURRENTMODE
+    }
   },
   methods: {},
   async created () {
