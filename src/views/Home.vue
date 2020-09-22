@@ -2,6 +2,7 @@
   <div class="home">
     <img alt="Vue logo" src="@/assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="adapt">2222</div>
   </div>
 </template>
 
@@ -16,3 +17,11 @@ export default {
   }
 }
 </script>
+<style>
+  .adapt {
+    width: 477px;/*no*/
+    height: 180px;
+    background: yellow;
+    color: royalblue;
+  }
+</style>

@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "dev": "vue-cli-service serve --mode dev",
+    "serve": "vue-cli-service serve --mode dev",
+    "dev": "vue-cli-service serve --mode prod",
     "lint": "vue-cli-service lint",
     "build:test": "vue-cli-service build --mode test",
     "build:prod": "vue-cli-service build --mode prod"
@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
+    "postcss-px2rem": "^0.3.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
