@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <header-top/>
     <h1>This is an about page</h1>
     <h1>{{env}}</h1>
     <h1>{{aaa}}</h1>
@@ -7,9 +8,13 @@
 </template>
 <script>
 import login from '@/network/http'
+import HeaderTop from '@/components/Header'
+
 export default {
   name: 'About',
-  components: {},
+  components: {
+    HeaderTop
+  },
   data () {
     return {
       env: process.env.VUE_APP_BASEURL,

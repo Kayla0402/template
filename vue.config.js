@@ -17,6 +17,17 @@ module.exports = {
       }
     }
   },
+  configureWebpack: config => {
+    if (process.env.NODE_ENV === 'production') {
+    } else {
+      return {
+        externals: {
+          // 'vue': 'Vue',
+          'element-ui': 'ELEMENT'
+        }
+      }
+    }
+  },
   css: {
     loaderOptions: {
       css: {},
